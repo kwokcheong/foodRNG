@@ -1,14 +1,14 @@
 import "./App.css";
 import { NavigationBar } from "./components/NavigationBar";
-import { AxiosExample } from "./components/AxiosExample";
-
+import { RouletteComponent } from "./components/RouletteComponent";
 function App() {
   return (
     <div>
       <NavigationBar />
       <div className="container">
         <p>Our first app</p>
-        <AxiosExample />
+        {/* <AxiosExample /> */}
+        <RouletteComponent />
       </div>
     </div>
   );
