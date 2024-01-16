@@ -6,6 +6,7 @@ function App() {
       <p>Kc's React NodeJS express template.</p>
       <p>Up to you to install react boostrap or tailwindCSS</p>
       <p>npm install react-bootstrap bootstrap</p>
+      <p>wowowow, kc very zai, setup this app</p>
     </div>
   );
 }
