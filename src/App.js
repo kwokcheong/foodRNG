@@ -1,12 +1,15 @@
 import "./App.css";
+import { NavigationBar } from "./components/NavigationBar";
+import { AxiosExample } from "./components/AxiosExample";
 
 function App() {
   return (
-    <div className="App">
-      <p>Kc's React NodeJS express template.</p>
-      <p>Up to you to install react boostrap or tailwindCSS</p>
-      <p>npm install react-bootstrap bootstrap</p>
-      <p>wowowow, kc very zai, setup this app</p>
+    <div>
+      <NavigationBar />
+      <div className="container">
+        <p>Our first app</p>
+        <AxiosExample />
+      </div>
     </div>
   );
 }
