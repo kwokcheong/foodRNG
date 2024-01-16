@@ -3,17 +3,18 @@ import axios from "axios";
 
 export const AxiosExample = () => {
   const [data, setData] = useState(null);
+  const apiUrl = process.env.REACT_APP_API_URL;
 
   useEffect(() => {
     axios
-      .get("https://dog.ceo/api/breeds/image/random")
+      .get(apiUrl)
       .then((response) => {
         setData(response.data);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, []);
+  }, [apiUrl]);
 
   return (
     <div>
