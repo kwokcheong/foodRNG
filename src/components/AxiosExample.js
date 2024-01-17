@@ -7,21 +7,23 @@ export const AxiosExample = () => {
 
   useEffect(() => {
     axios
-      .get(apiUrl)
+      .get(
+        "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.4376655,103.8439034&radius=500&type=restaurant&key=AIzaSyD8IIXyrx54Q1McVEvG63aOiXcHh33kby8"
+      )
       .then((response) => {
         setData(response.data);
       })
       .catch((error) => {
         console.log(error);
       });
-  }, [apiUrl]);
+  }, []);
 
   return (
     <div>
       {data ? (
         <div>
-          {/* {JSON.stringify(data)} */}
-          <img src={data.message} alt="dog" />
+          {JSON.stringify(data)}
+          {/* <img src={data.message} alt="dog" /> */}
         </div>
       ) : (
         <p>Loading data...</p>
