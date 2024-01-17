@@ -4,7 +4,7 @@ export const GooglePlaces = () => {
   const [restaurants, setRestaurants] = useState([]);
 
   useEffect(() => {
-    const sg = new window.google.maps.LatLng(1.4376655, 103.8439034);
+    const sg = new window.google.maps.LatLng(1.3055, 103.7731);
 
     const map = new window.google.maps.Map(document.getElementById("map"), {
       center: sg,

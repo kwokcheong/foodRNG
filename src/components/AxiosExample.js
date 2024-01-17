@@ -8,7 +8,7 @@ export const AxiosExample = () => {
   useEffect(() => {
     axios
       .get(
-        "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.4376655,103.8439034&radius=500&type=restaurant&key=AIzaSyD8IIXyrx54Q1McVEvG63aOiXcHh33kby8"
+        "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=1.4376655,103.8439034&radius=500&type=restaurant&key=XxX"
       )
       .then((response) => {
         setData(response.data);
